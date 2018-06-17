@@ -8,9 +8,9 @@ const mapStateToProps = (state) => ({
     comments: state.comments
 });
 
-const mapDispatchToProps = (dispatch) => ({
-    bindActionCreators(actionCreators, dispatch);
-});
+const mapDispatchToProps = (dispatch) => (
+    bindActionCreators(actionCreators, dispatch)
+);
 
 const App = connect(mapStateToProps, mapDispatchToProps)(Main);
 
